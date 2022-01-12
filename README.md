@@ -15,31 +15,31 @@
 
 ## Getting Started
 
-```bash
+```
 npx degit https://github.com/oigabrielteodoro/vite-typescript-boilerplate project-name
 ```
 
 ### Install dependencies:
 
-```bash
+```
 yarn
 ```
 
 or
 
-```bash
+```
 npm install
 ```
 
 ### Run development server
 
-```bash
+```
 yarn dev
 ```
 
 or 
 
-```bash
+```
 npm run dev
 ```
 

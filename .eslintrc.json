@@ -26,10 +26,12 @@
     "@typescript-eslint/no-non-null-assertion": 0,
     "@typescript-eslint/camelcase": 0,
     "@typescript-eslint/no-explicit-any": 2,
-    "@typescript-eslint/no-unused-vars": 2,
     "no-use-before-define": "off",
     "no-console": ["error", { "allow": ["error"] }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "ignoreRestSiblings": true
+    }],
     "comma-dangle": ["error", "always-multiline"],
     "space-before-function-paren": "off",
     "space-before-paren": "off",
