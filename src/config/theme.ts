@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
-    light: '#FEFDFF',
-    default: '#F4F5FE',
+    white: '#FEFDFF',
+    background: '#F4F5FE',
     dark: '#15111E',
     red: '#C60401',
 
@@ -12,7 +12,7 @@ export const theme = {
     },
   },
   font: {
-    family: 'Poppins',
+    family: 'Dm Sans',
     weigths: {
       regular: 400,
       medium: 500,

@@ -1,5 +1,5 @@
+import { theme } from 'config/theme'
 import { createGlobalStyle } from 'styled-components'
-import { theme } from './theme'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${theme.colors.light};
+    background: ${theme.colors.white};
     font-family: ${theme.font.family};
     overflow-x: hidden;
     color: ${theme.colors.dark};
@@ -29,7 +29,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   &::selection {
-    color: ${theme.colors.light};
+    color: ${theme.colors.white};
     background: ${theme.colors.dark};
+  }
+
+  html {
+    font-size: 62.5%;
   }
 `

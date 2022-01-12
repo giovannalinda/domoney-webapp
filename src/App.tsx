@@ -1,15 +1,15 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { GlobalStyle } from './ui'
 
-import { Login } from './pages'
-import { LOGIN } from './routes'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { GlobalStyle } from 'ui/components/GlobalStyle'
+import { SIGNIN } from './routes'
+import { SignIn } from './pages'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={LOGIN} element={<Login />} />
+        <Route path={SIGNIN} element={<SignIn />} />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>
