@@ -11,8 +11,7 @@
     "test:ci": "jest --passWithNoTests --ci --watchAll=false",
     "test:watch": "jest --maxWorkers=25% --watch",
     "type-check": "tsc --project tsconfig.json --noEmit",
-    "prettier": "prettier --write '**/*.{ts,tsx,json,md}'",
-    "prettier:check": "prettier -c '**/*.{ts,tsx,json,md}'",
+    "prettier:check": "prettier -c '**/*.{ts,tsx,json}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint:fix": "yarn lint --fix",
@@ -21,10 +20,8 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "yarn lint --fix",
-      "yarn prettier --write",
-      "yarn jest --findRelatedTests --bail"
-    ],
-    "*.js": "eslint --cache --fix"
+      "yarn prettier --write"
+    ]
   },
   "dependencies": {
     "babel-eslint": "10.1.0",
@@ -71,7 +68,7 @@
     "jest": "27.1.1",
     "jest-styled-components": "7.0.5",
     "lint-staged": "11.1.2",
-    "prettier": "2.4.0",
+    "prettier": "2.5.1",
     "storybook": "6.3.8",
     "storybook-builder-vite": "^0.0.12",
     "typescript": "4.3.2",
