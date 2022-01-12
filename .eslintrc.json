@@ -1,44 +1,29 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
   "extends": [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "standard"
+    "react-app",
+    "react-app/jest",
+    "standard",
+    "standard-jsx",
+    "standard-react"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "plugins": [
+    "only-warn"
+  ],
   "rules": {
-    "prettier/prettier": "error",
-    "import/order": 2,
-    "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/no-empty-function": 0,
-    "@typescript-eslint/no-non-null-assertion": 0,
-    "@typescript-eslint/camelcase": 0,
-    "@typescript-eslint/no-explicit-any": 2,
-    "@typescript-eslint/no-unused-vars": 2,
-    "no-use-before-define": "off",
-    "no-console": ["error", { "allow": ["error"] }],
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "comma-dangle": ["error", "always-multiline"],
-    "space-before-function-paren": "off",
-    "space-before-paren": "off",
-    "indent": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
-    "camelcase": "off",
-    "multiline-ternary": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "ignoreRestSiblings": true
+    }]
   }
 }
